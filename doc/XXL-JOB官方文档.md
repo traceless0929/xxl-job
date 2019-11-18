@@ -1,6 +1,6 @@
 ## 《分布式任务调度平台XXL-JOB》
 
-[![Build Status](https://travis-ci.org/xuxueli/xxl-job.svg?branch=master)](https://travis-ci.org/xuxueli/xxl-job)
+[![Actions Status](https://github.com/xuxueli/xxl-job/workflows/Java%20CI/badge.svg)](https://github.com/xuxueli/xxl-job/actions)
 [![Docker Status](https://img.shields.io/badge/docker-passing-brightgreen.svg)](https://hub.docker.com/r/xuxueli/xxl-job-admin/)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-job/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-job/)
 [![GitHub release](https://img.shields.io/github/release/xuxueli/xxl-job.svg)](https://github.com/xuxueli/xxl-job/releases)
@@ -346,6 +346,16 @@ XXL-JOB是一个轻量级分布式任务调度平台，其核心设计目标是�
     - 259、爱乐优（二手平台）
     - 260、猫眼电影（私有化部署）【猫眼电影】
     - 261、美团大象（私有化部署）【美团大象】
+    - 262、作业帮教育科技（北京）有限公司【作业帮】
+    - 263、北京小年糕互联网技术有限公司
+    - 264、山东矩阵软件工程股份有限公司
+    - 265、陕西国驿软件科技有限公司
+    - 266、君开信息科技
+    - 267、村鸟网络科技有限责任公司
+    - 268、云南国际信托有限公司
+    - 269、金智教育
+    - 270、珠海市筑巢科技有限公司
+    - 271、上海百胜软件股份有限公司
 	- ……
 
 > 更多接入的公司，欢迎在 [登记地址](https://github.com/xuxueli/xxl-job/issues/1 ) 登记，登记仅仅为了产品推广。
@@ -1572,7 +1582,9 @@ Tips: 历史版本(V1.3.x)目前已经Release至稳定版本, 进入维护阶段
 - 15、[ING]xxl-rpc服务端线程优化，降低线程内存开销；
 - 16、[ING]调度日志优化：支持设置日志保留天数，过期日志天维度记录报表，并清理；调度报表汇总实时数据和报表；
 - 17、[ING]父子任务参数传递；流程任务等，透传动态参数；
-
+- 18、[ING]调度中心任务平均分配，触发组件每次获取与线程池数量相关数量的任务，避免大量任务集中在单个调度中心集群节点。
+- 19、调度中心密码限制18位，修复修改密码超过18位无法登陆的问题；
+- 20、[ING]调度中心日志删除，改为分页获取ID，根据ID删除的方式；
 
 
 ### TODO LIST
@@ -1589,7 +1601,7 @@ Tips: 历史版本(V1.3.x)目前已经Release至稳定版本, 进入维护阶段
 - 11、失败重试间隔；
 - 12、SimpleTrigger：除Cron外，支持设置固定时间间隔触发；
 - 13、调度日志列表加上执行时长列，并支持排序；
-- 14、DAG流程任务：替换子任务，支持参数传递：配置并列的"a-b、b-c"路径列表，构成串行、并行、dag任务流程，"dagre-d3"绘图；任务依赖，流程图，子任务+会签任务，各节点日志；
+- 14、DAG流程任务：替换子任务，支持参数传递：配置并列的"a-b、b-c"路径列表，构成串行、并行、dag任务流程，"dagre-d3"绘图；任务依赖，流程图，子任务+会签任务，各节点日志；支持根据成功、失败选择分支；
 - 15、日期过滤：支持多个时间段排除；
 - 16、告警邮件内容，支持自定义模板配置；
 - 17、暂停状态，支持Cron 为空；
@@ -1605,7 +1617,11 @@ Tips: 历史版本(V1.3.x)目前已经Release至稳定版本, 进入维护阶段
 - 27、执行器服务端口与注册端口分离，支持docker动态随机端口；
 - 28、执行器端口复用，复用容器端口提供通讯服务；
 - 29、自定义失败重试时间间隔；
-= 30、分片任务全部成功后触发子任务；
+- 30、分片任务全部成功后触发子任务；
+- 31、任务复制功能；点击复制是弹出新建任务弹框，并初始化被复制任务信息；
+- 32、AccessToken按照执行器维度设置；控制调度、回调；
+- 33、任务执行一次的时候指定IP；
+- 34、通讯调整；双向HTTP，回调和其他API自定义AccessToken，Restful，执行器复用容器端口；
 
 
 ## 七、其他
