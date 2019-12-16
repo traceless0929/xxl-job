@@ -2,7 +2,7 @@
     <img src="https://www.xuxueli.com/doc/static/xxl-job/images/xxl-logo.jpg" width="150">
     <h3 align="center">XXL-JOB</h3>
     <p align="center">
-        XXL-JOB, a lightweight distributed task scheduling framework.
+        XXL-JOB, a distributed task scheduling framework.
         <br>
         <a href="https://www.xuxueli.com/xxl-job/"><strong>-- Home Page --</strong></a>
         <br>
@@ -33,11 +33,11 @@
 
 
 ## Introduction
-XXL-JOB is a lightweight distributed task scheduling framework. 
+XXL-JOB is a distributed task scheduling framework. 
 It's core design goal is to develop quickly and learn simple, lightweight, and easy to expand. 
 Now, it's already open source, and many companies use it in production environments, real "out-of-the-box".
 
-XXL-JOB是一个轻量级分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。
+XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。
 
 
 ## Documentation
@@ -406,6 +406,8 @@ XXL-JOB是一个轻量级分布式任务调度平台，其核心设计目标是�
     - 285、北京老虎证券【老虎证券】
     - 286、悠活省吧（北京）网络科技有限公司
     - 287、F5未来商店
+    - 288、深圳环阳通信息技术有限公司
+    - 289、遠傳電信
 	- ……
 
 > 更多接入的公司，欢迎在 [登记地址](https://github.com/xuxueli/xxl-job/issues/1 ) 登记，登记仅仅为了产品推广。
